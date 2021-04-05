@@ -5,11 +5,10 @@ It consists on three files:
 - Segmentation_train.csv: The file containing the training data for classification.
 - Segmentation_test.csv:  The File containing the testting data for classification.
 - Segmentation.names:     The file contating names of attributes present in the data.
-These data has been taken from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/image+segmentation#:~:text=UCI%20Machine%20Learning%20Repository%3A%20Image%20Segmentation%20Data%20Set&text=Data%20Set%20Information%3A,a%20classification%20for%20every%20pixel.).
+**These data has been taken from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/image+segmentation#:~:text=UCI%20Machine%20Learning%20Repository%3A%20Image%20Segmentation%20Data%20Set&text=Data%20Set%20Information%3A,a%20classification%20for%20every%20pixel.).**
 
 
 # Image Segmentation:
-# Introduction
 In digital image processing and computer vision, image segmentation is the process of partitioning a digital image into multiple segments (sets of pixels, also known as image objects). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images. More precisely, image segmentation is the process of assigning a label to every pixel in an image such that pixels with the same label share certain characteristics.
 
 The result of image segmentation is a set of segments that collectively cover the entire image, or a set of contours extracted from the image (see edge detection). Each of the pixels in a region are similar with respect to some characteristic or computed property, such as color, intensity, or texture.
