@@ -5,7 +5,8 @@ It consists on three files:
 - Segmentation_train.csv: The file containing the training data for classification.
 - Segmentation_test.csv:  The File containing the testting data for classification.
 - Segmentation.names:     The file contating names of attributes present in the data.
-These data has been taken from UCI Machine Learning Repository.
+These data has been taken from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/image+segmentation#:~:text=UCI%20Machine%20Learning%20Repository%3A%20Image%20Segmentation%20Data%20Set&text=Data%20Set%20Information%3A,a%20classification%20for%20every%20pixel.).
+
 
 # Image Segmentation:
 # Introduction
@@ -13,7 +14,7 @@ In digital image processing and computer vision, image segmentation is the proce
 
 The result of image segmentation is a set of segments that collectively cover the entire image, or a set of contours extracted from the image (see edge detection). Each of the pixels in a region are similar with respect to some characteristic or computed property, such as color, intensity, or texture.
 
-# Some information about data
+# Some information about Dataset:
 # Attribute Description:
 -  region-centroid-col:  the column of the center pixel of the region.
 - region-centroid-row:  the row of the center pixel of the region.
@@ -36,7 +37,30 @@ The result of image segmentation is a set of segments that collectively cover th
 - saturation-mean:  (see 17)
 - hue-mean:  (see 17)
 These are the real time attributes obtained from an image after segmentation. Now we need to classify the given images into different target classes which are:
-# Classes:  brickface, sky, foliage, cement, window, path, grass.
-# Number of Attributes: 19 continuous attributes
-# Number of Instances: Training data: 210  Test data: 2100
-# Missing Attribute Values: None
+# Classes:  
+brickface, sky, foliage, cement, window, path, grass.
+# Number of Attributes: 
+19 continuous attributes with all numeric values.
+# Number of Instances: 
+- Training data: 210  
+- Test data: 2100
+# Missing Attribute Values:
+No missing attributes are present in given dataset.
+
+# Algorithms used:
+- RandomForestClassifier:
+         Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean/average prediction (regression) of the individual trees. Random decision forests correct for decision trees' habit of overfitting to their training set. Random forests generally outperform decision trees, but their accuracy is lower than gradient boosted trees. However, data characteristics can affect their performance.
+         
+- Perceptron: 
+         A Perceptron is an algorithm used for supervised learning of binary classifiers. Binary classifiers decide whether an input, usually represented by a series of vectors, belongs to a specific class. In short, a perceptron is a single-layer neural network.
+         
+- Logistic Regression: 
+         Logistic regression is a supervised learning classification algorithm used to predict the probability of a target variable. The nature of target or dependent variable is dichotomous, which means there would be only two possible classes.
+         
+- Support Vector Classifier: 
+         In machine learning, support-vector machines (SVMs, also support-vector networks) are supervised learning models with associated learning algorithms that analyze data for classification and regression analysis. In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces.
+- Bagging Classifier:
+         A Bagging classifier is an ensemble meta-estimator that fits base classifiers each on random subsets of the original dataset and then aggregate their individual predictions (either by voting or by averaging) to form a final prediction. Such a meta-estimator can typically be used as a way to reduce the variance of a black-box estimator (e.g., a decision tree), by introducing randomization into its construction procedure and then making an ensemble out of it. 
+         This algorithm encompasses several works from the literature. When random subsets of the dataset are drawn as random subsets of the samples, then this algorithm is known as Pasting. If samples are drawn with replacement, then the method is known as Bagging. When random subsets of the dataset are drawn as random subsets of the features, then the method is known as Random Subspaces. Finally, when base estimators are built on subsets of both samples and features, then the method is known as Random Patches.
+         
+I hope this repository was helpful for everyone to understand image classification from given dataset.
