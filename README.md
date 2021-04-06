@@ -1,7 +1,7 @@
 # int-247-km007-ca-2-santosh199518
 A project on Image Classification where we can classify the image into different classes based upon data given in it.
 
-### It consists on three files:
+### It consists of three files:
 - Segmentation_train.csv: The file containing the training data for classification.
 - Segmentation_test.csv:  The File containing the testting data for classification.
 - Segmentation.names:     The file contating names of attributes present in the data.\
